@@ -7,5 +7,5 @@ month =sys.argv[1]
 df = pd.DataFrame({'Day':[1,2], 'Num_Passengers':[23,34]})
 df['Month'] = month
 print(df)
-df.to_parquet(f"ouput_{month}.parquet")
+df.to_parquet(f"output_{month}.parquet")
 print(f'hello from pipeline. month={month}')
